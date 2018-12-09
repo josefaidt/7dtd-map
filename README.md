@@ -7,7 +7,15 @@
 ![dev dependencies](https://img.shields.io/david/dev/josefaidt/7dtd-map.svg?style=flat-square)
 ![License](https://img.shields.io/github/license/josefaidt/7dtd-map.svg?style=flat-square)
 
-Live map PWA for a 7 Days to Die dedicated server
+Live map PWA for a 7 Days to Die dedicated server, inspiration drawn from [nicolas-f/7DTD-leaflet](https://github.com/nicolas-f/7DTD-leaflet).
+
+## Installation
+
+1. Ensure you have Node.js, [Yarn](https://yarnpkg.org), and Python 2.7 installed
+2. `yarn install`
+3. `pip install pillow`
+4. `yarn build:map`
+5. `yarn start`
 
 ## Roadmap
 
