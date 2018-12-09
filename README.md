@@ -1,4 +1,4 @@
-# [WIP] 7dtd-map
+# [WIP] 7dtd-map 🧟
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/josefaidt/7dtd-map.svg?style=flat-square)
 

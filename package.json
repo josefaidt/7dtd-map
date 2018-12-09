@@ -10,7 +10,7 @@
   "scripts": {
     "build:server": "webpack --mode production",
     "build:map": "python public/map_reader.py",
-    "start": "node src/server.js",
+    "start": "PORT=8000 node src/server.js",
     "develop": "nodemon src/server.js",
     "debug": "DEBUG=express:* node src/server.js",
     "client": "webpack-dev-server --mode development --hot",
