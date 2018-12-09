@@ -1,0 +1,48 @@
+{
+  "name": "7dtd-map",
+  "version": "0.0.1",
+  "description": "live map pwa for 7 Days to Die dedicated server",
+  "main": "app.js",
+  "repository": "https://github.com/josefaidt/7dtd-map",
+  "author": "josef <josef.aidt@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build:server": "webpack --mode production",
+    "build:map": "python public/map_reader.py",
+    "start": "node src/server.js",
+    "develop": "nodemon src/server.js",
+    "debug": "DEBUG=express:* node src/server.js",
+    "client": "webpack-dev-server --mode development --hot",
+    "server": "nodemon src/server.js",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.0",
+    "body-parser": "^1.18.3",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "public": "file:public",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
